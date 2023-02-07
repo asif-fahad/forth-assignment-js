@@ -31,7 +31,7 @@ function isLGSeven(number){
     return number * 2;
 }
 
-// Problem-4 : 
+// Problem-4 : We have check every elements in a array to identify the negative numbers and send only output of total negative numbers.
 function findingBadData(numbers) {
     if(typeof numbers != 'object'){
         return "Provide valid array"
@@ -43,4 +43,13 @@ function findingBadData(numbers) {
         }
     }
     return badData;
+}
+
+// Problem-5 : We have to multiply gems power to diamond and return it.
+function gemsToDiamond(friendOne, friendTwo, friendThree){
+    const gems = (21*friendOne) + (32*friendTwo) + (43*friendThree);
+    if (gems > 1000)
+    return (gems - 2000);
+    else
+    return gems;
 }
