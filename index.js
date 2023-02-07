@@ -1,5 +1,5 @@
 // Problem-1 : We have to make brackets to multiply and to do addition. then division and lastly subtraction
-function mindGame (positiveNumber) {
+function mindGame(positiveNumber) {
     if(typeof positiveNumber != 'number'){
         return "Provide valid number"
     }
@@ -47,6 +47,9 @@ function findingBadData(numbers) {
 
 // Problem-5 : We have to multiply gems power to diamond and return it.
 function gemsToDiamond(friendOne, friendTwo, friendThree){
+    if(typeof (friendOne, friendTwo, friendThree) != 'number'){
+        return "Provide valid number"
+    }
     const gems = (21*friendOne) + (32*friendTwo) + (43*friendThree);
     if (gems > 1000)
     return (gems - 2000);
