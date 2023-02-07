@@ -33,7 +33,7 @@ function isLGSeven(number){
 
 // Problem-4 : We have check every elements in a array to identify the negative numbers and send only output of total negative numbers.
 function findingBadData(numbers) {
-    if(typeof numbers != 'object'){
+    if(!Array.isArray(numbers)){
         return "Provide valid array"
     }
     let badData = 0;
